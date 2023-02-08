@@ -1,0 +1,256 @@
+/*body*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 400vh;
+}
+
+/*navbar*/
+
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.nav-links img{
+    width: 200px;
+    height: 50px;
+    float: left;
+}
+
+.nav-links ul{
+    float: right;
+    padding: 20px;
+    list-style: none;
+}
+
+.nav-links ul li a{
+    text-decoration: none; 
+    padding-right: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/*first section*/
+
+.first-section{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background: url(Images/image9.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.section-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition-duration: 3s;
+}
+
+.section-caption{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transition-duration: 2s;
+}
+
+.first-section:hover .section-overlay{
+    opacity: 1;
+    top: 0;
+}
+
+.first-section:hover .section-caption{
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*cards*/
+
+ .card{
+    width: 20%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid white;
+    transition-duration: 1s;
+    float: left;
+    margin: 2%;
+}
+
+.card1-img{
+    width: 100%;
+    height: 100%;
+}
+
+.card1-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card1-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition-duration: 2s;
+}
+
+.card-caption{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+}
+
+.card1:hover .card1-overlay{
+    opacity: 1;
+    bottom: 0;
+}
+
+.card1:hover{
+    box-shadow: 20px 10px 50px 1px black;
+}
+
+/*card2*/
+
+.card2-img{
+    width: 100%;
+    height: 100%;
+}
+
+.card2-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card2-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0%;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition-duration: 2s;
+}
+
+.card2-caption{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+}
+
+.card2:hover .card2-overlay{
+    opacity: 1;
+    bottom: 0;
+    transform: rotateY(360deg)
+}
+
+.card2:hover{
+    box-shadow: 20px 10px 50px 1px black;
+}
+
+/*card3*/
+
+.card3-img{
+    width: 100%;
+    height: 100%;
+}
+
+.card3-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card3-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition-duration: 2s;
+}
+
+.card3-caption{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+}
+
+.card3:hover .card3-overlay{
+    opacity: 1;
+    transform: skew(-30deg) rotate(-30deg)
+}
+
+.card3:hover{
+    box-shadow: 20px 10px 50px 1px black;
+}
+
+/*card4*/
+
+.card4-img{
+    width: 100%;
+    height: 100%;
+}
+
+.card4-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card4-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 20%;
+    right: 20%;
+    left: 20%;
+    opacity: 0;
+    transition-duration: 2s;
+}
+
+.card4-caption{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.card4:hover .card4-overlay{
+    opacity: 1;
+    transform: scale(1.8)
+}
+
+.card4:hover{
+    box-shadow: 20px 10px 50px 1px black;
+}
+
+.clear{
+    clear: both;
+}
